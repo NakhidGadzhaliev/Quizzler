@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizzler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="iT6-7Z-RXT">
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-Hy-Cia">
+                                <rect key="frame" x="16" y="48" width="382" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYD-P8-0iP">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifE-or-XD7">
+                                        <rect key="frame" x="0.0" y="129.5" width="382" height="484.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-P3-Gjk">
+                                        <rect key="frame" x="0.0" y="624" width="382" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="QUm-EC-k6N"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Rectangle"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="True">
+                                                    <attributes>
+                                                        <font key="NSFont" size="30" name="Helvetica"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="om8-Hq-Rgv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br8-mz-sDE">
+                                        <rect key="frame" x="0.0" y="714" width="382" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="7nt-oM-NjH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Rectangle"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="False">
+                                                    <attributes>
+                                                        <font key="NSFont" size="30" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ObJ-y3-V0K"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="sKp-xo-cZK">
+                                        <rect key="frame" x="0.0" y="804" width="382" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="vUU-IU-hjQ"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.71475047420000004" green="0.23051382209999999" blue="0.65607542119999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.20000001789999999" green="0.22745099660000001" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="iT6-7Z-RXT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0KE-QZ-2OP"/>
+                            <constraint firstItem="q5W-Hy-Cia" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8Vn-sU-yyU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q5W-Hy-Cia" secondAttribute="trailing" constant="16" id="GqN-uF-fXK"/>
+                            <constraint firstItem="q5W-Hy-Cia" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ON6-6Q-ukH"/>
+                            <constraint firstItem="iT6-7Z-RXT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fSm-HA-UWn"/>
+                            <constraint firstAttribute="bottom" secondItem="iT6-7Z-RXT" secondAttribute="bottom" id="rz3-Ck-eHN"/>
+                            <constraint firstItem="q5W-Hy-Cia" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wzv-3M-gQE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="yYD-P8-0iP" id="NHL-F3-SKM"/>
+                        <outlet property="falseButton" destination="br8-mz-sDE" id="pZQ-dH-3sL"/>
+                        <outlet property="progressBar" destination="sKp-xo-cZK" id="DEj-JU-rbl"/>
+                        <outlet property="questionLabel" destination="ifE-or-XD7" id="319-B5-Jpy"/>
+                        <outlet property="trueButton" destination="uN4-P3-Gjk" id="0qv-3u-iLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background-Bubbles" width="352" height="102"/>
+        <image name="Rectangle" width="322" height="68"/>
+    </resources>
+</document>

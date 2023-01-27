@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multi Quiz View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MultiQuizViewController" customModule="Quizzler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="84P-4c-iHd">
+                                <rect key="frame" x="0.0" y="750" width="393" height="102"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vbw-ML-aCj">
+                                <rect key="frame" x="16" y="59" width="361" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWT-hV-IV9">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="95"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld7-eN-gNS">
+                                        <rect key="frame" x="0.0" y="105" width="361" height="364"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.98936471810000004" blue="0.9919147962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2E-OV-uot">
+                                        <rect key="frame" x="0.0" y="479" width="361" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="p51-6K-Qad"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Rectangle"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Button">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="24"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eBl-Z6-EJl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6B-fo-UNm">
+                                        <rect key="frame" x="0.0" y="569" width="361" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="jJc-kh-69l"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Rectangle"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Button">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="24"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1b2-Bh-AnJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-m2-SGK">
+                                        <rect key="frame" x="0.0" y="659" width="361" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="tHX-hu-HjY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Rectangle"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Button">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="24"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ogR-Md-12X"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="ff4-bn-AXc">
+                                        <rect key="frame" x="0.0" y="749" width="361" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="UiC-Iq-mJW"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.71475047420000004" green="0.23051382209999999" blue="0.65607542119999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.20000001789999999" green="0.22745099660000001" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="84P-4c-iHd" secondAttribute="bottom" id="Aa4-do-uDF"/>
+                            <constraint firstItem="vbw-ML-aCj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="H7E-wg-B6c"/>
+                            <constraint firstItem="84P-4c-iHd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LGa-lt-pnG"/>
+                            <constraint firstItem="vbw-ML-aCj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ioN-sk-wOC"/>
+                            <constraint firstItem="84P-4c-iHd" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="pAG-8z-rpK"/>
+                            <constraint firstItem="vbw-ML-aCj" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="qzA-Tx-dpC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vbw-ML-aCj" secondAttribute="trailing" constant="16" id="sbk-OR-DFW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstChoiceButton" destination="P2E-OV-uot" id="pTX-lU-Z1r"/>
+                        <outlet property="progressBar" destination="ff4-bn-AXc" id="8Ib-VD-kb3"/>
+                        <outlet property="questionTitle" destination="ld7-eN-gNS" id="lYD-wy-6Mx"/>
+                        <outlet property="scoreLabel" destination="rWT-hV-IV9" id="rfJ-nv-rtH"/>
+                        <outlet property="secondChoiceButton" destination="l6B-fo-UNm" id="PFu-fX-fRi"/>
+                        <outlet property="thirdChoiceButton" destination="Nkz-m2-SGK" id="7hD-Cl-W0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background-Bubbles" width="352" height="102"/>
+        <image name="Rectangle" width="322" height="68"/>
+    </resources>
+</document>
